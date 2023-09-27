@@ -7,5 +7,8 @@
 	"files.autoSave": "onFocusChange",
 	"editor.fontSize": 16,
 	"editor.insertSpaces": false,
-	"editor.detectIndentation": false
+	"editor.detectIndentation": false,
+	"[handlebars]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
