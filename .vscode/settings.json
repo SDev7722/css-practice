@@ -9,6 +9,6 @@
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
 	"[handlebars]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "vscode.html-language-features"
 	}
 }
