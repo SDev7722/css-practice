@@ -10,5 +10,6 @@
 	"editor.detectIndentation": false,
 	"[handlebars]": {
 		"editor.defaultFormatter": "vscode.html-language-features"
-	}
+	},
+	"prettier.bracketSameLine": true
 }
