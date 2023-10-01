@@ -1,0 +1,260 @@
+:root {
+	--space-12: 12px;
+	--space-16: 16px;
+	--space-24: 24px;
+	--space-36: 36px;
+
+	--size-14: 14px;
+	--size-16: 16px;
+	--size-20: 20px;
+
+	--color-border: #dee2e6;
+	--color-primary: rgb(46, 46, 255);
+	--color-white: #fff;
+	--color-title: #212529;
+	--color-text: #343a40;
+	--color-grey: #6c757d;
+
+	--border-radius: 12px;
+
+	--weight-title: 500;
+	--weight-text: 400;
+}
+
+/* ======================= */
+
+.page {
+	background: var(--color-white);
+	padding: 0 15px;
+
+	display: flex;
+	justify-content: center;
+}
+
+.page_content {
+	max-width: 960px;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+
+	gap: 80px;
+}
+
+/* ======================= */
+
+.header {
+	padding: var(--space-16) 0;
+	border-bottom: 1px solid var(--color-border);
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 17px;
+	color: var(--color-white);
+	background: var(--color-primary);
+
+	width: var(--space-24);
+	height: var(--space-24);
+
+	border-radius: calc(var(--border-radius) / 2);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav {
+	display: flex;
+}
+
+.nav_inline {
+	gap: var(--space-16);
+}
+
+.nav_vertical {
+	gap: var(--space-16);
+	flex-direction: column;
+}
+
+.nav_link {
+	color: var(--color-text);
+	font-size: var(--size-16);
+	text-decoration: none;
+
+	line-height: 100%;
+}
+
+.nav_link:hover {
+	text-decoration: underline;
+	color: var(--color-primary);
+}
+
+.footer {
+	padding: var(--space-16) 0;
+
+	border-top: 1px solid var(--color-border);
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer_copyright {
+	font-size: var(--size-14);
+	color: var(--color-text);
+
+	display: block;
+
+	margin-top: var(--space-16);
+}
+
+.footer_title {
+	font-size: var(--size-20);
+	color: var(--color-title);
+
+	display: block;
+	margin-bottom: var(--space-16);
+
+	font-weight: var(--weight-title);
+}
+
+.hero {
+	display: flex;
+	align-items: center;
+	gap: var(--space-36);
+
+	padding: var(--space-36);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.hero_image {
+	width: 500px;
+	height: 500px;
+	border-radius: var(--border-radius);
+}
+
+.hero_content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-16);
+}
+
+.hero_title {
+	font-size: 50px;
+	color: var(--color-title);
+	font-weight: var(--weight-title);
+	line-height: 120%;
+}
+
+.hero_text {
+	color: var(--color-text);
+	font-size: var(--size-20);
+	font-weight: var(--weight-text);
+	line-height: 170%;
+}
+
+.featured {
+	display: flex;
+	gap: var(--space-36);
+
+	padding: var(--space-36);
+	border-bottom: 1px solid var(--color-border);
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+	gap: var(--space-16);
+}
+
+.card_image {
+	height: 64px;
+	width: 64px;
+	border-radius: var(--border-radius);
+}
+
+.card_title {
+	font-size: 32px;
+	font-weight: var(--weight-title);
+	color: var(--color-title);
+}
+
+.card_text {
+	font-weight: var(--weight-text);
+	font-size: var(--size-16);
+	color: var(--color-text);
+}
+
+.button {
+	display: inline-block;
+	font-size: var(--size-16);
+	text-decoration: none;
+	padding: var(--space-12) var(--space-16);
+	border-radius: var(--border-radius);
+}
+
+.card_button {
+	color: var(--color-primary);
+}
+
+.button:hover {
+	opacity: 0.7;
+}
+
+.form {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background: var(--color-primary);
+	padding: var(--space-24);
+	border-radius: var(--border-radius);
+}
+
+.actions_content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-24);
+}
+
+.actions_title {
+	font-size: var(--space-24);
+	font-weight: var(--weight-title);
+	color: var(--color-white);
+}
+
+.form_info {
+	font-size: var(--size-16);
+	font-weight: var(--weight-text);
+	color: var(--color-white);
+}
+
+.actions_button {
+	display: flex;
+	background-color: var(--color-white);
+	justify-content: center;
+	width: 100%;
+	max-width: 240px;
+	color: var(--color-text);
+}
+
+/* Template-4 */
+.main_button {
+	background-color: var(--color-grey);
+	width: 100%;
+	max-width: 119px;
+	color: var(--color-white);
+}
+
+.button_featured {
+	display: inline-block;
+	font-size: var(--size-16);
+}
+
+.button_featured:hover {
+	opacity: 0.7;
+}
