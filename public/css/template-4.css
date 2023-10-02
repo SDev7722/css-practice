@@ -205,7 +205,7 @@
 	opacity: 0.7;
 }
 
-.form {
+.actions_form {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -221,15 +221,13 @@
 	gap: var(--space-24);
 }
 
+.actions_content:not(:last-child) {
+	padding-right: var(--space-24);
+}
+
 .actions_title {
 	font-size: var(--space-24);
 	font-weight: var(--weight-title);
-	color: var(--color-white);
-}
-
-.form_info {
-	font-size: var(--size-16);
-	font-weight: var(--weight-text);
 	color: var(--color-white);
 }
 
@@ -238,7 +236,7 @@
 	background-color: var(--color-white);
 	justify-content: center;
 	width: 100%;
-	max-width: 240px;
+	width: 240px;
 	color: var(--color-text);
 }
 
