@@ -289,8 +289,9 @@
 }
 
 .experience_badge {
-	position: relative;
-	top: -180px;
+	position: absolute;
+	top: 1100px;
+	left: 1370px;
 	transform: rotate(30deg);
 	padding: 12px 24px;
 	gap: 12px;
