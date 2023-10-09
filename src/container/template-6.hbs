@@ -51,39 +51,16 @@
 
 {{#with updates}}
 <div class="updates">
-	<h1 class="updates_title">{{title}}</h1>
+	<h6 class="updates_title">{{title}}</h6>
 
 	{{#each list}}
-	<div class="upd">
-		<svg class="upd_svg upd_pos"
-			 xmlns="http://www.w3.org/2000/svg"
-			 width="32"
-			 height="32"
-			 viewBox="0 0 32 32"
-			 fill="none">
-			<path d="M32 0H0V32H32V0Z" />
-		</svg>
+	<div class="updates_list_item">
+		<div class="color_block"></div>
 
-		<svg class="upd_svg upd_pos"
-			 xmlns="http://www.w3.org/2000/svg"
-			 width="32"
-			 height="32"
-			 viewBox="0 0 32 32"
-			 fill="none">
-			<path d="M32 0H0V32H32V0Z" />
-		</svg>
-
-		<svg class="upd_svg upd_pos"
-			 xmlns="http://www.w3.org/2000/svg"
-			 width="32"
-			 height="32"
-			 viewBox="0 0 32 32"
-			 fill="none">
-			<path d="M32 0H0V32H32V0Z" />
-		</svg>
-
-		<strong class="upd_name">{{nickname}}</strong>
-		<p class="upd_description">{{description}}</p>
+		<div>
+			<span class="upd_name">{{nickname}}</span>
+			<p class="upd_description">{{description}}</p>
+		</div>
 	</div>
 	{{/each}}
 
