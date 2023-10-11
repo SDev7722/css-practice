@@ -253,6 +253,7 @@
 	font-size: var(--size-d);
 	color: var(--color-title);
 	font-weight: var(--weight-text);
+	margin-top: var(--space-m);
 }
 
 .card_experience {
