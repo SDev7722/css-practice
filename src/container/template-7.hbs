@@ -16,17 +16,19 @@
 	{{/with}}
 </section>
 
-<div class="Articles">
-	<div>
-		<h2 class="articles_title">Our Articles</h2>
+<div>
+	<div class="Articles">
+		<div>
+			<h2 class="articles_title">Our Articles</h2>
+		</div>
+		<div>
+			<button class="articles_button">View All</button>
+		</div>
 	</div>
-	<div>
-		<button class="articles_button">View All</button>
-	</div>
-</div>
 
-<section class="articles_card_block">
-	{{#each articles}}
-	{{> articleCardDark data=this}}
-	{{/each}}
-</section>
+	<section class="articles_card_block">
+		{{#each articles}}
+		{{> articleCardDark data=this}}
+		{{/each}}
+	</section>
+</div>

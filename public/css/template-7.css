@@ -60,6 +60,8 @@
 	/* left: calc(50% - (var(--page-width) / 2)); */
 	z-index: 1;
 	position: fixed;
+
+	max-width: var(--page-width);
 	width: 100%;
 }
 
@@ -70,9 +72,6 @@
 
 	display: flex;
 	justify-content: space-between;
-
-	max-width: var(--page-width);
-	width: 100%;
 
 	background-color: var(--color-page);
 }
@@ -85,9 +84,6 @@
 	justify-content: space-between;
 
 	position: sticky;
-
-	max-width: var(--page-width);
-	width: 100%;
 
 	background-color: var(--color-page);
 }
@@ -275,6 +271,7 @@
 .articles {
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: var(--space-l);
 }
 
 .articles_title {
