@@ -1,0 +1,35 @@
+<header class="header">
+	<div class="header_1">
+		<div class="">
+			{{> logo_2}}
+		</div>
+
+		<nav class="header_nav">
+			<div class="header_nav_right">
+				{{#with header}}
+				{{> nav list=links}}
+				{{/with}}
+			</div>
+		</nav>
+	</div>
+
+	<div class="header_2">
+		<div class="logo_group">
+			<div class="">
+				{{>logo_Ad}}
+			</div>
+
+
+			{{#with header.ad}}
+			<a class="ad"
+			   href="{{url}}">{{text}}</a>
+			{{/with}}
+		</div>
+
+		<div class="user">
+			{{#with header}}
+			Users online: {{userOnline}}
+			{{/with}}
+		</div>
+	</div>
+</header>

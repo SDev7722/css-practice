@@ -1,0 +1,32 @@
+<main class="main">
+	<section class="page_block">
+		<div class="hero">
+			{{#with hero}}
+			{{> hero_2 title=title text=text}}
+			<a class="button_hero"
+			   href="{{button.url}}">{{button.text}}</a>
+			{{/with}}
+		</div>
+	</section>
+</main>
+
+<section class="about">
+	{{#with about}}
+	{{> hero_3 title=heading text=info}}
+	{{/with}}
+</section>
+
+<div class="Articles">
+	<div>
+		<h2 class="articles_title">Our Articles</h2>
+	</div>
+	<div>
+		<button class="articles_button">View All</button>
+	</div>
+</div>
+
+<section class="articles_block">
+	{{#each articles}}
+	{{> articleCardDark data=this}}
+	{{/each}}
+</section>
