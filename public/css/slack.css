@@ -142,6 +142,35 @@ body {
 		margin-top: 50px;
 	}
 
+	.img_deliveroo_image {
+		height: 100%;
+		max-width: 550px;
+	}
+
+	.deliveroo_info {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 390px;
+		padding: var(--spacing-8);
+		gap: var(--spacing-7);
+	}
+
+	.deliveroo_label {
+		font-size: var(--size-4);
+	}
+
+	.deliveroo_content {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.deliveroo_image {
+		width: 147px;
+	}
+
 	.hero_content {
 		display: grid;
 		gap: var(--spacing-5);
@@ -195,6 +224,17 @@ body {
 		background-position: top right;
 	}
 
+	.features_section:last-of-type {
+		padding-top: 60px;
+	}
+
+	.background {
+		background-image: url("/img/what-you-need.png");
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-size: 470px;
+	}
+
 	.features_title {
 		font-size: var(--size-6);
 	}
@@ -202,6 +242,17 @@ body {
 	.features_description {
 		font-size: var(--size-2);
 		max-width: 520px;
+	}
+
+	.position {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.padd {
+		padding-right: 73px;
+		padding-bottom: var(--spacing-7);
 	}
 
 	.feat_card {
@@ -231,6 +282,26 @@ body {
 	.features_grid_4 > .feat_card:first-of-type {
 		grid-row: 1 / 3;
 	}
+
+	.features_grid_3 {
+		display: grid;
+
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+
+		max-width: 930px;
+
+		margin-left: 294px;
+		gap: var(--spacing-3);
+	}
+
+	.features_grid_3 > .feat_card:first-of-type {
+		grid-row: 1 / 3;
+	}
+
+	.features_grid_3 > .feat_card:nth-of-type(2) {
+		grid-row: 1 / 3;
+	}
 }
 
 @layer adaptive {
@@ -240,7 +311,7 @@ body {
 		}
 	}
 
-	@media all and (1000px <= width < 1260px) {
+	@media all and (1020px <= width < 1260px) {
 		.page_content {
 			max-width: var(--page-width-medium);
 		}
@@ -251,7 +322,7 @@ body {
 		}
 	}
 
-	@media all and (width < 1000px) {
+	@media all and (width < 1020px) {
 		.page_content {
 			max-width: var(--page-width-small);
 		}
@@ -274,6 +345,10 @@ body {
 			grid-row: 1 / 3;
 		}
 
+		.features_grid_3 {
+			margin-left: 0;
+		}
+
 		.features_section {
 			background: none;
 		}
@@ -283,11 +358,25 @@ body {
 		.features_grid_4 {
 			grid-template-columns: 2fr 2fr;
 		}
+
+		.features_grid_3 {
+			grid-template-columns: 2fr 2fr;
+			margin-left: 0;
+		}
 	}
 
 	@media all and (width < 400px) {
 		.features_grid_4 {
 			grid-template-columns: 1fr;
+		}
+
+		.features_grid_3 {
+			grid-template-columns: 1fr;
+			margin-left: 0;
+		}
+
+		.features_grid_3 > .feat_card:nth-of-type(2) {
+			grid-row: none;
 		}
 
 		.hero_buttons {
