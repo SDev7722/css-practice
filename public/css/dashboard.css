@@ -500,6 +500,7 @@ body {
 
 	.input-width {
 		max-width: 189px;
+		min-width: 120px;
 	}
 
 	.color-dark {
@@ -594,7 +595,6 @@ body {
 
 		.input-width {
 			max-width: 402px;
-			min-width: 160px;
 		}
 
 		.main__list-payment {
@@ -632,11 +632,21 @@ body {
 		}
 
 		.layout {
-			min-width: 160px;
+			min-width: 210px;
 		}
 
 		.analytic__block {
-			min-width: 256px;
+			min-width: 190px;
+		}
+	}
+
+	@media all and (width <= 350px) {
+		.input-width {
+			width: 142px;
+		}
+
+		.button-payment {
+			width: 142px;
 		}
 	}
 }
