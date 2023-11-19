@@ -64,19 +64,6 @@
 						  style="background-image: url('/svg/nav/products.svg')"></span>
 					<span class="text text--light">Products</span>
 				</a>
-
-				<div class="relative click">
-					<div class="field field--select relative">
-						<span class="text text--light">Choose...</span>
-					</div>
-					<select class="field__select">
-						<option value="dog">Dog</option>
-						<option value="cat">Cat</option>
-						<option value="hamster">Hamster</option>
-						<option value="parrot">Parrot</option>
-						<option value="spider">Spider</option>
-					</select>
-				</div>
 			</nav>
 		</aside>
 		<header class="header">
@@ -92,18 +79,14 @@
 				</div>
 
 				<div class="header__icon-group">
-					<div>
-						<span class="icon icon--header icon--button icon--color-blue click"
-							  style="background-image: url('/svg/header/settings.svg')"></span>
-					</div>
-					<div>
-						<span class="icon icon--header icon--button icon--color-blue click"
-							  style="background-image: url('/svg/header/settings.svg')"></span>
-					</div>
-					<div>
-						<span class="icon icon--header icon--button icon--color-blue click"
-							  style="background-image: url('/svg/header/settings.svg')"></span>
-					</div>
+					<span class="icon icon--header icon--button icon--color-yellow-light click"
+						  style="background-image: url('/svg/header-group/antenna.svg')"></span>
+
+					<span class="icon icon--header icon--button icon--color-blue-lighter click"
+						  style="background-image: url('/svg/header-group/symbols.svg')"></span>
+
+					<span class="icon icon--header icon--button icon--color-yellow-light click"
+						  style="background-image: url('/svg/header-group/tabler.svg')"></span>
 				</div>
 			</div>
 		</header>
@@ -115,7 +98,7 @@
 							  style="background-image: url('/svg/analytic/money.svg')"></span>
 
 						<div class="relative vertical vertical--small">
-							<div class="analytic__title text text--light">$500</div>
+							<div class="analytic__title text text--light text--bold">$500</div>
 							<div class="text text--small text--lighter">Total earning</div>
 
 							<span class="icon analytic__arrow"
@@ -128,7 +111,7 @@
 							  style="background-image: url('/svg/analytic/order.svg')"></span>
 
 						<div class="relative vertical vertical--small">
-							<div class="analytic__title text text--light">$961</div>
+							<div class="analytic__title text text--light text--bold">$961</div>
 							<div class="text text--small text--lighter">Total order</div>
 
 							<span class="icon analytic__arrow"
@@ -141,7 +124,7 @@
 							  style="background-image: url('/svg/analytic/money.svg')"></span>
 
 						<div class="relative vertical vertical--small">
-							<div class="analytic__title text--mod text--light">$203k</div>
+							<div class="analytic__title text text--size-mod text--light text--bold">$203k</div>
 							<div class="text text--small text--lighter">Total income</div>
 						</div>
 					</div>
@@ -151,13 +134,178 @@
 							  style="background-image: url('/svg/analytic/shop.svg')"></span>
 
 						<div class="relative vertical vertical--small">
-							<div class="analytic__title text--mod text--black">$203k</div>
+							<div class="analytic__title text text--size-mod text--black text--bold">$203k</div>
 							<div class="text text--small text--gary">Total income</div>
 						</div>
 					</div>
 				</section>
+
+				<div class="main__list-payment">
+					<section class="box margin-top min-height">
+						<h2 class="text list__title text__black text--bold">Purchase list</h2>
+
+						<hr class="divider">
+
+						<div class="list__block">
+							<div>
+								<div class="text margin-bottom">ID437661</div>
+								<div class="text">May 11, 2023, 14:21</div>
+							</div>
+
+							<div>
+								<div class="text margin-bottom">AirOn ProCam</div>
+								<div class="text">7/8 USB Type-C</div>
+							</div>
+
+							<div>
+								<div class="text margin-bottom">132.32 EUR</div>
+								<div class="text list-red">Not paid</div>
+							</div>
+
+							<div>
+								<div class="text margin-bottom">Customer</div>
+								<div class="text">robin@com.de</div>
+							</div>
+						</div>
+
+						<hr class="divider">
+
+						<div class="list__block">
+							<div>
+								<div class="text margin-bottom">ID437661</div>
+								<div class="text">May 11, 2023, 14:21</div>
+							</div>
+
+							<div>
+								<div class="text margin-bottom">PHILIPS Essential</div>
+								<div class="text">HD9200/90</div>
+							</div>
+
+							<div>
+								<div class="text margin-bottom">543 USD</div>
+								<div class="text list-green">Pay by Stripe</div>
+							</div>
+
+							<div>
+								<div class="text margin-bottom">Customer</div>
+								<div class="text">dima@com.ua</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="box margin-top payment__block-width">
+						<h2 class="text list__title text__black text--bold">Payment</h2>
+
+						<hr class="divider">
+
+						{{!-- Radio button --}}
+						<label class="container"><span class="text">Credit card</span>
+							<input type="radio"
+								   checked="checked"
+								   name="radio">
+							<span class="checkmark click"></span>
+						</label>
+						<label class="container"><span class="text">Debit card</span>
+							<input type="radio"
+								   name="radio">
+							<span class="checkmark click"></span>
+						</label>
+						<label class="container"><span class="text">PayPal</span>
+							<input type="radio"
+								   name="radio">
+							<span class="checkmark click"></span>
+						</label>
+						{{!-- ------------------------}}
+
+						<div class="payment__block padding-top-medium">
+							<div>
+								<div class="display-6 text padding-bottom-small color-dark">Name on card</div>
+								<div class="relative click">
+									<div class="field field--select relative input-width">
+										<input class="text textcolor-dark">
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="display-6 text padding-bottom-small color-dark">Credit card number</div>
+								<div class="relative click">
+									<div class="field field--select relative input-width">
+										<input class="text color-dark">
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="display-6 text padding-bottom-small color-dark">Expiration</div>
+								<div class="relative click">
+									<div class="field field--select relative input-width">
+										<input class="text color-dark">
+									</div>
+								</div>
+							</div>
+
+							<div>
+								<div class="display-6 text padding-bottom-small color-dark">CVV</div>
+								<div class="relative click">
+									<div class="field field--select relative input-width">
+										<input class="text color-dark">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<hr class="divider">
+
+						<div class="payment__block">
+							<div>
+								<div class="display-6 text padding-bottom-small color-dark">Country</div>
+								<div class="relative click">
+									<div class="field field--select relative input-width">
+										<span class="text color-dark">Choose...</span>
+										<span class="icon icon--input-settings click"
+											  style="background-image: url('/svg/input/arrow-input.svg')"></span>
+									</div>
+									<select class="field__select">
+										<option value="dog">Dog</option>
+										<option value="cat">Cat</option>
+										<option value="hamster">Hamster</option>
+										<option value="parrot">Parrot</option>
+										<option value="spider">Spider</option>
+									</select>
+								</div>
+							</div>
+
+							<div>
+								<div class="display-6 padding-bottom-small color-dark">State</div>
+								<div class="relative click">
+									<div class="field field--select relative input-width">
+										<span class="text color-dark">Choose...</span>
+										<span class="icon icon--input-settings click"
+											  style="background-image: url('/svg/input/arrow-input.svg')"></span>
+									</div>
+									<select class="field__select">
+										<option value="dog">Dog</option>
+										<option value="cat">Cat</option>
+										<option value="hamster">Hamster</option>
+										<option value="parrot">Parrot</option>
+										<option value="spider">Spider</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<hr class="divider">
+
+						<a href="#"
+						   class="nav-button button-payment click">
+							<span class="text text--light">Continue to checkout</span>
+						</a>
+					</section>
+				</div>
 			</div>
 		</main>
+
 	</div>
 
 </body>
