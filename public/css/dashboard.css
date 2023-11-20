@@ -521,6 +521,10 @@ body {
 		justify-content: center;
 		background-color: var(--color-primary);
 	}
+
+	.text-align {
+		text-align: center;
+	}
 }
 
 @layer adaptive {
@@ -604,6 +608,10 @@ body {
 			grid-template-columns: 1fr;
 			grid-template-rows: min-content min-content;
 			gap: var(--spacing-9);
+		}
+
+		.main__list-payment {
+			gap: 0;
 		}
 	}
 
